@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mizuki Akiyama · 暁山瑞希</title>
+  <meta name="description" content="A soft pastel fan page for Mizuki Akiyama of 25-ji, Nightcord de. — profile, story, music and quotes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=M+PLUS+Rounded+1c:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-heart">&#9825;</div>
+      <div class="loader-bar"><span></span></div>
+      <p class="loader-text" id="loaderText">loading&hellip;</p>
+    </div>
+  </div>
+
+  <div id="scene-root" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Global navigation">
+    <div class="nav-inner">
+      <a href="#top" class="brand">Mizuki&nbsp;<span class="brand-jp">暁山瑞希</span></a>
+      <div class="nav-links">
+        <a href="#profile">Profile</a>
+        <a href="#story">Story</a>
+        <a href="#music">Music</a>
+        <a href="#quotes">Quotes</a>
+      </div>
+      <button class="lang" type="button" aria-label="Toggle language (visual)">EN / JP</button>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero" id="hero">
+      <h1 class="hero-title">
+        <span class="jp">暁山<span class="accent">瑞希</span></span>
+        <span class="en">Mizuki Akiyama</span>
+      </h1>
+      <p class="hero-sub">25-ji, Nightcord de. &middot; the animator</p>
+      <div class="scroll-cue"><span class="mouse"><span></span></span><span class="cue">scroll</span></div>
+    </section>
+
+    <section class="panel profile" id="profile">
+      <div class="panel-copy">
+        <p class="eyebrow">Profile</p>
+        <h2>The one who loves everything cute&hellip;</h2>
+        <dl class="stat-grid" id="statGrid"></dl>
+        <div class="stat-bars" id="statBars"></div>
+      </div>
+    </section>
+
+    <section class="panel story" id="story">
+      <div class="panel-copy">
+        <p class="eyebrow">Story</p>
+        <h2>A story told at 25:00</h2>
+        <div class="lore-cols" id="loreCols"></div>
+      </div>
+    </section>
+
+    <section class="panel music" id="music">
+      <div class="panel-copy">
+        <p class="eyebrow">Music</p>
+        <h2>Songs under the night</h2>
+        <div class="track-list" id="trackList"></div>
+        <div class="player" id="player" hidden>
+          <div class="player-track" id="playerTrack">—</div>
+          <audio id="audio" preload="none"></audio>
+          <div class="player-controls">
+            <button class="pc" id="playBtn" type="button" aria-label="Play">&#9658;</button>
+            <input id="seek" class="seek" type="range" min="0" max="100" value="0" aria-label="Seek">
+            <span class="time" id="time">0:00 / 0:00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel quotes" id="quotes">
+      <div class="panel-copy">
+        <p class="eyebrow">Quotes</p>
+        <div class="quote-card" id="quoteCard">
+          <blockquote id="quoteText"></blockquote>
+          <button class="quote-next" id="quoteNext" type="button">next&nbsp;&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <div class="cta-inner">
+        <h2>Follow the animation studio under 25:00.</h2>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#music" rel="noopener">Listen to ID, Smile</a>
+          <a class="btn btn-ghost" href="#top">Back to top</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy;2026 Mizuki fan page. Fan-made; not affiliated with SEGA / Colorful Palette / Crypton.</p>
+      <p>Mizuki Akiyama &middot; 25-ji, Nightcord de. &middot; Made with &#9825;</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
