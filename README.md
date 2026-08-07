@@ -8,12 +8,7 @@ A 3D website project you can try https://hihaw.github.io/Mizuki-3D/
 - Rotating 3D model when scroll
 - Smooth scroll
 - Music player
-├── assets/
-│   └── img/
-├── index.html
-├── script.js
-├── style.css
-└── README.md
+
 ## 🌐 Structure Folder
 ```bash
 ├── public/
